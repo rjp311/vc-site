@@ -5,7 +5,7 @@ meta_desc: Verified Creations and Mods for Starfield and Fallout 4 by Cookiemorp
 blocks:
   - headline: Welcome to Cook's Creations.
     text: |
-      #### The Home of Cookiemorph's Verified Creations and Modding Projects.
+      #### The Home of Cook's Verified Creations and Modding Projects.
     image:
       src: /art/SF-concept-New_Atlantis_03.jpg
       alt: >-
