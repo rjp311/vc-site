@@ -13,7 +13,7 @@ const nextConfig = {
         ];
     },
     images: {
-        remotePatterns: [{ protocol: 'http', hostname: 'assets.tina.io' }],
+        remotePatterns: [{ protocol: 'https', hostname: 'assets.tina.io' }],
     },
 };
 
