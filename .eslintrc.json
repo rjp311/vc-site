@@ -5,6 +5,6 @@
     "ecmaVersion": 2020
   },
   "rules": {
-    "no-unescaped-entities": "ignore"
+    "no-unescaped-entities": 0
   }
 }
