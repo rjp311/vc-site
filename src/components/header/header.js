@@ -19,6 +19,7 @@ export default async function Header() {
                 src={CookBanner}
                 fill={true}
                 alt="Header background - gravity lines"
+                priority={true}
             />
             <div className={styles.header}>
                 <Link className={styles.logo} href="/">
@@ -27,6 +28,7 @@ export default async function Header() {
                             src={CookBGSLogo}
                             fill={true}
                             alt="Cook's Creations Logo"
+                            priority={true}
                         ></Image>
                     </span>
                     <span className={styles.title}>Cook's<br/>Creations</span>
