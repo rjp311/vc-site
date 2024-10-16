@@ -1,5 +1,3 @@
-'use client'
-
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 import { tinaField } from "tinacms/dist/react";
 import { Section } from "../../layout/section/section";

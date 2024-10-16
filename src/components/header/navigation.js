@@ -5,11 +5,6 @@ import styles from './header.module.scss';
 import { useState, useCallback, useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
-
-import CookBGSLogo from '../../assets/CookBGS_Logo.png'
-import CookBanner from '../../assets/CookBannerV1.png'
-
 
 const NavLink = ({props, isChild = false}) => {
     const url = props?.url
@@ -60,38 +55,21 @@ export default function Navigation({props}) {
     }, [path])
 
     return (
-        <header className={styles.wrapper}>
-            <Image className={styles.background}
-                src={CookBanner}
-                fill={true}
-                alt="Header background - gravity lines"
-            />
-            <div className={styles.header}>
-                <Link className={styles.logo} href="/">
-                    <span className={styles.image}>
-                        <Image 
-                            src={CookBGSLogo}
-                            fill={true}
-                            alt="Cook's Creations Logo"
-                        ></Image>
-                    </span>
-                    <span className={styles.title}>Cook's<br/>Creations</span>
-                </Link>
-                <div className={styles.grow}></div>
-                <div className={`${styles.navbar} ${isBurgerOpen ? styles.open : ''}`}>
-                    <nav className={`${styles.navigation}`}>
-                        { nav?.map((nl, i) => {
-                            return <NavLinks key={i} props={nl} callback={() => ToggleHamburger()}/>
-                        })}
-                    </nav>
-                </div>
-                <div className={`${styles.hamburger} ${isBurgerOpen ? styles.open : ''}`} onClick={() => ToggleHamburger()}>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+        <>
+            <div className={styles.grow}></div>
+            <div className={`${styles.navbar} ${isBurgerOpen ? styles.open : ''}`}>
+                <nav className={`${styles.navigation}`}>
+                    { nav?.map((nl, i) => {
+                        return <NavLinks key={i} props={nl} callback={() => ToggleHamburger()}/>
+                    })}
+                </nav>
             </div>
-        </header>
+            <div className={`${styles.hamburger} ${isBurgerOpen ? styles.open : ''}`} onClick={() => ToggleHamburger()}>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </>
     );
 }
