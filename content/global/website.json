@@ -1,0 +1,33 @@
+{
+  "header": {
+    "header_navigation": [
+      {
+        "text": "About",
+        "url": "/about",
+        "location": "_self"
+      },
+      {
+        "text": "Creations",
+        "url": "/creations",
+        "location": "_self"
+      },
+      {
+        "text": "Contact",
+        "url": "/contact",
+        "location": "_self"
+      }
+    ]
+  },
+  "footer": {
+    "footer_navigation": [
+      {
+        "text": "About Us",
+        "url": "about"
+      },
+      {
+        "text": "Work for us",
+        "url": "work-for-us"
+      }
+    ]
+  }
+}

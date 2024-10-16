@@ -1,0 +1,47 @@
+@use '../styles/variables.scss' as v;
+
+.wrapper {
+    width: 100%;
+    max-width: v.$section-maxwidth-desktop;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sorry, .more {
+    min-height: 192px;
+    padding: 2rem;
+}
+
+.sorry {
+    color: var(--color-light);
+    background-color: var(--color-primary);
+    .image {
+        position: relative;
+        height: 100%;
+        .planet {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 128px;
+            width: 128px;
+            font-size: 2em;
+            font-weight: 700;
+            background-color: var(--color-tertiary);
+            box-shadow: 0 4px 4px var(--color-shadow);
+            border-radius: 999px;
+            transform: rotate(5deg);
+        }
+    }
+}
+
+.more {
+    color: var(--color-dark);
+    background-color: var(--color-secondary);
+}
+
+@media screen and (max-width: v.$breakpoint-tablet) {
+    .wrapper {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}

@@ -1,0 +1,13 @@
+@use '../../styles/variables.scss' as v;
+
+.footer {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    color: var(--color-light);
+    background-color: var(--color-dark);
+}
+
+.wrapper {
+    max-width: v.$section-maxwidth-desktop;
+}

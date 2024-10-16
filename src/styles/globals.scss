@@ -1,0 +1,198 @@
+@use './variables.scss' as v;
+//@import 'bulma/css/bulma.css';
+
+:root {
+  --color-primary: #04344e;
+  --color-secondary: #09689c;
+  --color-tertiary: #d56b42;
+  --color-green: #099c68;
+  --color-dark: #242832;
+  --color-light: #fafafa;
+  --color-shadow: #22222288;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: var(--font-content);
+  max-width: 100vw;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+}
+
+main {
+  padding-top: v.$header-height-desktop;
+  //padding-bottom: v.$header-height-desktop;
+  color: var(--color-text-dark);
+  background-color: var(--color-primary);
+  a {
+    cursor: pointer;
+    color: inherit;
+    font-weight: 700;
+    &:not(:has(button)) {
+      text-decoration: underline;
+    }
+  }
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  min-height: 192px;
+  padding: 2rem;
+}
+
+footer {
+  a {
+    cursor: pointer;
+    color: inherit;
+    font-weight: 700;
+    &:not(:has(button)) {
+      text-decoration: underline;
+    }
+  }
+}
+
+.bg-color {
+  &.primary {
+    color: var(--color-light);
+    background-color: var(--color-primary);
+  }
+  &.secondary {
+    color: var(--color-light);
+    background-color: var(--color-secondary);
+    button {
+      color: var(--color-dark);
+      background-color: var(--color-light);
+      &:hover {
+        color: var(--color-light);
+        background-color: var(--color-tertiary);
+      }
+    }
+  }
+  &.tertiary {
+    color: var(--color-light);
+    background-color: var(--color-tertiary);
+  }
+  &.light {
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    button {
+      color: var(--color-light);
+      background-color: var(--color-secondary);
+      &:hover {
+        color: var(--color-light);
+        background-color: var(--color-tertiary);
+      }
+    }
+  }
+  &.dark {
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    button {
+      color: var(--color-dark);
+      background-color: var(--color-light);
+      &:hover {
+        color: var(--color-light);
+        background-color: var(--color-tertiary);
+      }
+    }
+  }
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin: 0.5rem 0;
+}
+
+ul, ol {
+  margin: 0.5rem;
+  list-style-position: inside;
+  li {
+    * {
+      display: inline;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title);
+  margin: 0.5rem 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.75em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5, h6 {
+  font-size: 1.1em;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1.25em;
+  font-weight: 700;
+  color: var(--color-dark);
+  text-decoration: none;
+  background-color: var(--color-light);
+  box-shadow: 0 2px 2px var(--color-shadow);
+  border-radius: 4px;
+  &:hover {
+    color: var(--color-light);
+    background-color: var(--color-tertiary);
+  }
+}
+
+@media screen and (max-width: v.$breakpoint-tablet) {
+  main {
+    padding-top: v.$header-height-handheld;
+    //padding-bottom: v.$header-height-handheld;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+  
+  h2 {
+    font-size: 1.4em;
+  }
+  
+  h3 {
+    font-size: 1.3em;
+  }
+  
+  h4 {
+    font-size: 1.2em;
+  }
+  
+  h5, h6 {
+    font-size: 1.1em;
+  }
+}

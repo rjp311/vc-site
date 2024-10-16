@@ -1,0 +1,10 @@
+{
+  "extends": "next/core-web-vitals",
+  "parserOptions": {
+    // Required for certain syntax usages
+    "ecmaVersion": 2020
+  },
+  "rules": {
+    "no-unescaped-entities": "ignore"
+  }
+}
