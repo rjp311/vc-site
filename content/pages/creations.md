@@ -1,5 +1,9 @@
 ---
 title: Creations
+meta_title: Creations
+meta_desc: >-
+  Browse all of Cook's verified creations and modding projects for Starfield and
+  Fallout 4.
 blocks:
   - headline: Creations.
     text: >
