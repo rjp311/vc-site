@@ -1,6 +1,6 @@
 ---
 title: Contact
-meta_title: Contact | Cook's Creations | Starfield and Fallout 4
+meta_title: Contact
 meta_desc: 'Contact Cookiemorph for support, assistance, or other via Discord.'
 blocks:
   - headline: Contact.
