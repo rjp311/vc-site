@@ -1,6 +1,6 @@
 ---
 title: About
-meta_title: About | Cook's Creations | Starfield and Fallout 4
+meta_title: About
 meta_desc: >-
   About Cookiemorph - his journey as a modder, technical professional, and
   Verified Creator for Starfield and Fallout 4.
@@ -50,7 +50,7 @@ blocks:
 
       I started tinkering with the G.E.C.K. and a couple of years later, I found
       myself contributing to the project alongside the team my good friend Chris
-      had put together. 
+      had put together.
 
 
       I created the companion system, which let you bring otherwise
