@@ -19,7 +19,7 @@ export const Content = ({data}) => {
                     priority={true}
                 />
             )}
-            <Container data-tina-field={tinaField(data, "body")}>
+            <Container data-tina-field={tinaField(data, "body")} className={styles.content}>
                 <TinaMarkdown content={data.body} />
             </Container>
         </Section>
